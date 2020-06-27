@@ -1,0 +1,453 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } table { border-collapse: collapse; border-spacing: 0; } *{ margin:0; padding:0; }
+body{
+    display: flex;
+}
+.yan{
+    margin-top: 50px;
+    width: 225px;
+    height: 100%;
+    background-color: #3f5162 ;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+}
+.yan .applications{
+    color: white;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    border: 1px dotted white;
+}
+.yan .applications span{
+    margin-left: 10px;
+    font-size: 15px;
+}
+.yan .services{
+    color: white;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+.yan .services span{
+    margin-left: 10px;
+    font-size: 15px;
+}
+.yan .services .fa-chevron-down{
+   margin-left: 110px;
+}
+.yan .market{
+    color: white;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    background-color: #496b8a;
+}
+.yan .market span{
+    margin-left: 35px;
+}
+.yan .instances{
+    color: white;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+.yan .instances span{
+    margin-left: 35px;
+}
+.yan .user{
+    color: white;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+.yan .user span{
+    margin-left: 35px;
+}
+.yan .hana{
+    color: white;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    border: 1px solid gray;
+}
+.yan .hana span{
+    margin-left: 10px;
+    font-size: 15px;
+}
+.yan .hana .fa-chevron-right{
+    margin-left: 90px;
+}
+.yan .portal{
+    color: white;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+.yan .portal span{
+    margin-left: 10px;
+    font-size: 15px;
+}
+.yan .routes{
+    color: white;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    border: 1px solid gray;
+}
+.yan .routes span{
+    margin-left: 10px;
+    font-size: 15px;
+}
+.yan .security{
+    color: white;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+.yan .security span{
+    margin-left: 10px;
+    font-size: 15px;
+}
+.yan .events{
+    color: white;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    border: 1px solid gray;
+}
+.yan .events span{
+    margin-left: 10px;
+    font-size: 15px;
+}
+.yan .members{
+    color: white;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    border-bottom: 1px solid #757b81;
+}
+.yan .members span{
+    margin-left: 10px;
+    font-size: 15px;
+}
+.yan .null{
+    width: 100%;
+    height: 100px;
+}
+.yan .useful{
+    color: white;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+.yan .useful span{
+    margin-left: 10px;
+    font-size: 15px;
+}
+.yan .legal{
+    color: white;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+.yan .legal span{
+    margin-left: 10px;
+    font-size: 15px;
+}
+.ust{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+}
+.ust .header{
+    width: 1350px;
+    height: 50px;
+    background-color: #2f3c48;
+    display: flex;
+    align-items: center;
+    margin-left: -225px;
+}
+.ust .header .fa-align-justify{
+    color: white;
+    margin-left: 15px;
+}
+.ust .header .sol2{
+    margin-left: 10px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: -4px;
+    font-size: 20px;
+}
+.ust .header .sol3{
+    margin-left: 10px;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    word-spacing: 5px;
+}
+.ust .header .uclu{
+    margin-left: auto !important;
+    padding-right: 25px;
+    width: 125px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.ust .badi{
+    width: 100%;
+    height: 150px;
+    background-color: white;
+}
+.ust .badi .home{   
+    color: #0533ff;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.ust .badi .space{
+    color: black;
+    font-size: 17px;
+    padding-top: 35px;
+    padding-left: 15px;
+}
+.ust .badi .space .fa-question-circle{
+    float: right;
+    margin-right: 20px;
+}
+.ust .badi .all{
+    font-size: 13px;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+.ust .badi .search{
+    float: right;
+    margin-right: 8px;
+    margin-top: 15px;
+    width: 225px;
+}
+.ust .altbadi{
+    background-color: #efedee;
+    width: 100%;
+    height: 500px;
+    
+}
+.ust .altbadi .kutular1{
+    display: flex;
+    margin: 20px;
+    box-sizing: border-box;
+}
+.ust .altbadi .kutular1 .kutu1{
+    margin: 15px;
+    background-color: white;
+    width: 260px;
+    height: 170px;
+}
+#bir1{
+    font-size: 20px;
+    color: #0533ff;
+    margin: 8px;
+}
+#bir2{
+    font-size: 15px;
+    color: black;
+    margin-left: 8px;
+}
+#bir3{
+    font-size: 16px;
+    color: black;
+    margin: 5px;
+    text-align: left;
+    display: flex;
+    margin-top: 15px; 
+}
+#img1{
+    color: #0533ff;
+    font-size: 40px;
+    margin-top: 15px;
+    margin-right: 8px;
+}
+.ust .altbadi .kutular1 .kutu2{
+    background-color: white;
+    width: 260px;
+    height: 170px;
+    margin: 15px;
+}
+#iki1{
+    font-size: 20px;
+    color: #0533ff;
+    margin: 8px;
+}
+#iki2{
+    font-size: 15px;
+    color: black;
+    margin-left: 8px;
+}
+#iki3{
+    font-size: 16px;
+    color: black;
+    margin: 5px;
+    text-align: left;
+    display: flex;
+    margin-top: 15px; 
+}
+#img2{
+    color: #0533ff;
+    font-size: 40px;
+    margin-top: 15px;
+    margin-right: 8px;
+}
+.ust .altbadi .kutular1 .kutu3{
+    background-color: white;
+    width: 260px;
+    height: 170px;
+    margin: 15px;
+}
+#uc1{
+    font-size: 20px;
+    color: #0533ff;
+    margin: 8px;
+}
+#uc2{
+    font-size: 15px;
+    color: black;
+    margin-left: 8px;
+}
+#uc3{
+    font-size: 16px;
+    color: black;
+    margin: 5px;
+    text-align: left;
+    display: flex;
+    margin-top: 15px; 
+}
+#img3{
+    color: #0533ff;
+    font-size: 40px;
+    margin-top: 5px;
+    margin-right: 8px;
+}
+.ust .altbadi .kutular2{
+    display: flex;
+    margin: 20px;
+    box-sizing: border-box;
+}
+.ust .altbadi .kutular2 .kutu4{
+    margin: 15px;
+    background-color: white;
+    width: 260px;
+    height: 170px;
+}
+#dort1{
+    font-size: 20px;
+    color: #0533ff;
+    margin: 8px;
+}
+#dort2{
+    font-size: 15px;
+    color: black;
+    margin-left: 8px;
+}
+#dort3{
+    font-size: 16px;
+    color: black;
+    margin: 5px;
+    text-align: left;
+    display: flex;
+    margin-top: 15px; 
+}
+#img4{
+    color: #0533ff;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+.ust .altbadi .kutular2 .kutu5{
+    background-color: white;
+    width: 260px;
+    height: 170px;
+    margin: 15px;
+}
+#bes1{
+    font-size: 20px;
+    color: #0533ff;
+    margin: 8px;
+}
+#bes2{
+    font-size: 15px;
+    color: black;
+    margin-left: 8px;
+}
+#bes3{
+    font-size: 16px;
+    color: black;
+    margin: 5px;
+    text-align: left;
+    display: flex;
+    margin-top: 15px; 
+}
+#img5{
+    color: black;
+    font-size: 40px;
+    margin-top: 15px;
+    margin-right: 8px;
+}
+.ust .altbadi .kutular2 .kutu6{
+    background-color: white;
+    width: 260px;
+    height: 170px;
+    margin: 15px;
+}
+#alti1{
+    font-size: 20px;
+    color: #0533ff;
+    margin: 8px;
+}
+#alti2{
+    font-size: 15px;
+    color: black;
+    margin-left: 8px;
+}
+#alti3{
+    font-size: 16px;
+    color: black;
+    margin: 5px;
+    text-align: left;
+    display: flex;
+    margin-top: 15px; 
+}
+#img6{
+    color: black;
+    font-size: 40px;
+    margin-top: 15px;
+    margin-right: 8px;
+}
